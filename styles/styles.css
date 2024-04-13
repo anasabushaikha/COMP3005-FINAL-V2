@@ -1,0 +1,221 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+header button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+header nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+main h2 {
+  margin: 0 0 10px;
+}
+
+main p {
+  margin: 0;
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+main li {
+  margin: 0 10px 10px 0;
+}
+
+main button {
+  background-color: #333;
+  color: #fff;
+  border:none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  fill: #333;
+}
+
+.twitter-icon {
+  background-color: #1da1f2;
+}
+
+.facebook-icon {
+  background-color: #3b5998;
+}
+
+.menu-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.menu-bar li {
+  float: left;
+}
+
+.menu-bar li a {
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu-bar li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.menu-bar li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.member-search, .member-details {
+  padding: 20px;
+}
+
+.member-details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.member-details th {
+  background-color: #f2f2f2;
+  width: 30%;
+}
+
+.member-details td {
+  padding: 8px;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid #ddd;
+}
+.menu-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.menu-bar li {
+  float: left;
+}
+
+.menu-bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu-bar li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.menu-bar li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.calendar-container {
+  padding: 20px;
+  text-align: center;
+}
+
+iframe {
+  max-width: 100%;
+  height: 600px;
+  border: none;
+}
+.day-label {
+  text-align: right; 
+  padding-right: 10px;
+}
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+

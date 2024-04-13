@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile - Momentum Fitness Center</title>
+        <link rel="stylesheet" href="../../styles/styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Welcome, [User's First Name]!</h1>
+            <p id="profileName">Name will be displayed here</p>
+            <p id="memberId">Member ID will be displayed here</p>
+
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="member-schedule.html">My Bookings</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="profile-info">
+                <h2>Profile Information</h2>
+                <p>Name: [User's Full Name]</p>
+                <p>Email: [User's Email]</p>
+            </section>
+            <section class="recent-activity">
+                <h2>Recent Activity</h2>
+                <p>Last Booking: [Details]</p>
+                <p>Last Login: [Date and Time]</p>
+            </section>
+
+            <h1>Profile information!</h1>
+            <form id="createProfileForm">       
+                <label for="weight">Weight:</label><br>
+                <input type="number" id="weight" name="weight"><br>
+                
+                <label for="bloodPressure">Blood Pressure:</label><br>
+                <input type="text" id="bloodPressure" name="bloodPressure"><br>
+                
+                <label for="bodyFat">Body Fat (%):</label><br>
+                <input type="number" id="bodyFat" name="bodyFat" step="0.01"><br>
+                
+                <input type="submit" value="Update Profile">
+            </form>
+
+            <h1>Goals information!</h1>
+
+            <form id="updateFitnessGoalsForm">
+                <label for="targetWeight">Target Weight:</label><br>
+                <input type="number" id="targetWeight" name="targetWeight"><br>
+                
+                <label for="targetPace">Target Pace (format: 00:00:00):</label><br>
+                <input type="text" id="targetPace" name="targetPace"><br>
+                
+                <label for="targetBodyFat">Target Body Fat (%):</label><br>
+                <input type="number" id="targetBodyFat" name="targetBodyFat" step="0.01"><br>
+                
+                <input type="submit" value="Update Fitness Goals">
+            </form>
+
+            <h1>Member information!</h1>
+            <form id="updateUserInfoForm">
+                <label for="updateEmail">Email:</label><br>
+                <input type="email" id="updateEmail" name="email"><br>
+                
+                <label for="updatePhone">Phone:</label><br>
+                <input type="text" id="updatePhone" name="phone"><br>
+                
+                <label for="updateHomeNum">Home Number:</label><br>
+                <input type="text" id="updateHomeNum" name="homeNum"><br>
+                
+                <label for="updateStreetName">Street Name:</label><br>
+                <input type="text" id="updateStreetName" name="streetName"><br>
+                
+                <label for="updatePostalCode">Postal Code:</label><br>
+                <input type="text" id="updatePostalCode" name="postalCode"><br>
+                
+                <input type="submit" value="Update Information">
+            </form>
+
+        </main>
+        <footer>
+            <p>© Momentum Fitness Center. All Rights Reserved.</p>
+        </footer>
+
+
+
+        <script src="../../functions/member_functions.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const memberName = localStorage.getItem('memberName');
+                const memberId = localStorage.getItem('memberId');
+
+                document.getElementById('profileName').textContent = "Name: " + memberName;
+                document.getElementById('memberId').textContent = "Member ID: " + memberId;
+         
+                const headerGreeting = document.querySelector('header h1');
+                if (headerGreeting && memberName) {
+                    headerGreeting.textContent = `Welcome, ${memberName}!`;
+                }
+            });
+        </script>
+    </body>
+</html>

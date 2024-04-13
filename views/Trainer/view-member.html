@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Member - Momentum Fitness Center</title>
+  <link rel="stylesheet" href="../../styles/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Momentum Fitness Center</h1>
+    <div class="menu-bar">
+      <ul>
+        <li><a href="set-availability.html">Set Availability</a></li>
+        <li><a href="view-schedule.html">View Schedule</a></li>
+        <li><a href="view-member.html" class="active">View Member</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="member-search">
+      <h2>Member Lookup</h2>
+      <!-- Form for searching a member -->
+      <form id="searchForm" action="/search-member" method="post">
+        <input type="text" name="first_name" placeholder="Enter First Name">
+        <input type="text" name="last_name" placeholder="Enter Last Name">
+        <input type="submit" value="Search">
+      </form>   
+    </div>
+    <div class="member-details">
+      <h2>Member Details</h2>
+      <!-- The member details will be populated here by the JavaScript -->
+    </div>
+  </main>
+  <footer>
+    <p>© Momentum Fitness Center. All Rights Reserved.</p>
+  </footer>
+  <script src="../../functions/trainer_functions.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Schedule - Momentum Fitness Center</title>
+  <link rel="stylesheet" href="../../styles/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Momentum Fitness Center</h1>
+    <div class="menu-bar">
+      <ul>
+        <li><a href="set-availability.html">Set Availability</a></li>
+        <li><a href="view-schedule.html" class="active">View Schedule</a></li>
+        <li><a href="view-member.html">View Member</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="calendar-container">
+      <h2>Your Current Bookings</h2>
+        <table id="bookingTable">
+            <thead>
+                <tr>
+                    <th>Class Type</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Duration</th>
+                    <th>Room</th>
+                    <th>Instructors</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </section>
+  </main>
+  <footer>
+    <p>© Momentum Fitness Center. All Rights Reserved.</p>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const trainerName = localStorage.getItem('trainerName');
+        const trainerId = localStorage.getItem('trainerId');
+    
+        const navBar = document.querySelector('.menu-bar');
+        if (navBar) {
+            navBar.insertAdjacentHTML('beforeend', `
+                <ul>
+                    <li>Trainer Name: ${trainerName}</li>
+                    <br>
+                    <li>Trainer ID: ${trainerId}</li>
+                </ul>
+            `);
+        }
+    });
+    </script>
+    <script src="../../functions/trainer_functions.js"></script>
+</body>
+</html>

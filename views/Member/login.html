@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="../../styles/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Welcome Back</h1>
+      <nav>
+        <ul>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./register.html">Health Trainers Bookings</a></li>
+          <li><a href="./login.html">Register/Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form id="loginForm">
+        <label for="email">Email address:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <button type="button" onclick="loginAsMember()">Member Login</button>
+        <button type="button" onclick="loginAsTrainer()">Trainer Login</button>
+        <button type="button" onclick="loginAsAdmin()">Admin Login</button>
+      </form>
+      <p>Don't have an account? <a href="./register.html">Click here</a> to register.</p>
+    </main>
+    <footer>
+      <p>© Momentum Fitness Center. All Rights Reserved.</p>
+    </footer>
+
+    
+    <script src="/functions/member_functions.js"></script>
+    <script src="/functions/trainer_and_admin_login_functions.js"></script>
+  </body>
+</html>
