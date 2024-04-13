@@ -1,4 +1,4 @@
-COMP 3005 - Final Project Version B
+COMP 3005 - Final Project Version 2
 
 Group:
     Anas Abushaikha         101 285 962
